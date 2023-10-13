@@ -13,16 +13,17 @@ int main() {
     bmi = berat / (tinggi * tinggi);
 
     printf("BMI Anda adalah: %.1f\n", bmi);
-// jika berat badan lebih dari 40 dan kurang dari 50 = obesitas
-     if (bmi >= 40 && bmi < 50) {
-        printf("Kategori BMI Anda adalah: Obesitas\n");
-// jika berat badan lebih dari 25 dan kurang dari 39 = normal
+// jika berat badan lebih dari 17 dan kurang dari 23 = cetak badan ideal
+     if (bmi >= 17 && bmi < 23) {
+        printf("Cetak Badan Ideal\n");
+// jika berat badan lebih dari 18 dan kurang dari 25 = cetak badan ideal
 
-    } else if (bmi >= 25 && bmi < 39) {
-        printf("Kategori BMI Anda adalah: Normal\n");
-// jika tidak ada berat dari kedua diatas = kurus
+    } else if (bmi >= 18 && bmi < 25) {
+        printf("Cetak Badan Ideal\n");
+// jika tidak ada berat dari kedua diatas = cetak badan tidak ideal
     } else {
-        printf("Kategori BMI Anda adalah: Kurus\n");
+        printf("Cetak Badan Tidak Ideal\n");
     }
     return 0;
 }
+
